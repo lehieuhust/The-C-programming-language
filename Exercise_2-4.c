@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 void squeeze(char s1[], char s2[]) {
     int i, j, k;
     int found;
@@ -19,14 +17,4 @@ void squeeze(char s1[], char s2[]) {
         }
     }
     s1[j] = '\0';
-}
-
-int main() {
-    char str1[] = "apple juice";
-    char str2[] = "aeiou";
-
-    squeeze(str1, str2);
-    printf("Result: %s\n", str1);
-
-    return 0;
 }
